@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>NFeature</id>
+    <version>1.0.4554.36812</version>
+    <title>NFeature</title>
+    <authors>Ben Aston</authors>
+    <owners>Ben Aston</owners>
+    <licenseUrl>http://www.gnu.org/licenses/lgpl.txt</licenseUrl>
+    <projectUrl>https://github.com/benaston/NFeature</projectUrl>
+    <iconUrl>https://secure.gravatar.com/avatar/2a43432a33175c6bbe896da22dd6f6ee?s=140</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Simple feature configuration and availability-control for .NET. Please help me to improve the quality of NFeature by reporting issues on GitHub at https://github.com/benaston/NFeature/issues, or emailing ben@bj.ma.</description>
+    <releaseNotes />
+    <copyright>Copyright 2011</copyright>
+    <language />
+    <tags>feature feature-configuration-wall feature-wall configuration</tags>
+    <dependencies>
+      <dependency id="NBasicExtensionMethod" version="1.0.4554.34582" />
+      <dependency id="NFeature.Configuration" version="1.0.4554.36639" />
+    </dependencies>
+  </metadata>
+</package>

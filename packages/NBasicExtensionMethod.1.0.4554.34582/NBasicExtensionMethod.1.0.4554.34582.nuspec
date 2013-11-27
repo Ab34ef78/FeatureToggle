@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>NBasicExtensionMethod</id>
+    <version>1.0.4554.34582</version>
+    <title>NBasicExtensionMethod</title>
+    <authors>Ben Aston</authors>
+    <owners>Ben Aston</owners>
+    <licenseUrl>http://www.gnu.org/licenses/lgpl.txt</licenseUrl>
+    <projectUrl>https://github.com/benaston/NBasicExtensionMethod</projectUrl>
+    <iconUrl>https://secure.gravatar.com/avatar/2a43432a33175c6bbe896da22dd6f6ee?s=140</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>A deliberately-small collection of useful extension methods with an embarrassing lack of test coverage.</description>
+    <copyright>Copyright 2012</copyright>
+    <tags>extension-method</tags>
+  </metadata>
+</package>

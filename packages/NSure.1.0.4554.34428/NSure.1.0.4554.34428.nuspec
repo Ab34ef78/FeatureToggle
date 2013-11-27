@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>NSure</id>
+    <version>1.0.4554.34428</version>
+    <title>NSure</title>
+    <authors>Ben Aston</authors>
+    <owners>Ben Aston</owners>
+    <licenseUrl>http://www.gnu.org/licenses/lgpl.txt</licenseUrl>
+    <projectUrl>https://github.com/benaston/NSure</projectUrl>
+    <iconUrl>https://secure.gravatar.com/avatar/2a43432a33175c6bbe896da22dd6f6ee?s=140</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Simple fluent assertions for .NET.</description>
+    <copyright>Copyright 2011</copyright>
+    <tags>fluent assertion</tags>
+    <dependencies>
+      <dependency id="NHelpfulException" version="1.0.4554.34109" />
+    </dependencies>
+  </metadata>
+</package>
