@@ -46,9 +46,6 @@
     <Reference Include="NFeature">
       <HintPath>..\packages\NFeature.1.0.4554.36812\lib\net40\NFeature.dll</HintPath>
     </Reference>
-    <Reference Include="NFeature.Configuration">
-      <HintPath>..\packages\NFeature.1.0.4554.36812\lib\net40\NFeature.Configuration.dll</HintPath>
-    </Reference>
     <Reference Include="NHelpfulException">
       <HintPath>..\packages\NHelpfulException.1.0.4554.34109\lib\net40\NHelpfulException.dll</HintPath>
     </Reference>
@@ -203,6 +200,8 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountModels.cs" />
+    <Compile Include="NFeature\Features.cs" />
+    <Compile Include="NFeature\UpdateFeaturesConfiguration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -322,6 +321,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NFeature.Configuration\NFeature.Configuration.csproj">
+      <Project>{6bcc91df-1456-4fa0-b96f-2e52db9b8547}</Project>
+      <Name>NFeature.Configuration</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

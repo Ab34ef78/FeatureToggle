@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>NHelpfulException</id>
+    <version>1.0.4409.2007</version>
+    <title>NHelpfulException</title>
+    <authors>Ben Aston</authors>
+    <owners>Ben Aston</owners>
+    <licenseUrl>http://www.gnu.org/licenses/lgpl.txt</licenseUrl>
+    <projectUrl>https://github.com/benaston/NHelpfulException</projectUrl>
+    <iconUrl>https://secure.gravatar.com/avatar/2a43432a33175c6bbe896da22dd6f6ee?s=140</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>A simple wrapper for System.Exception to help make exceptions more meaningful.</description>
+    <copyright>Copyright 2011</copyright>
+    <tags>exception</tags>
+  </metadata>
+</package>

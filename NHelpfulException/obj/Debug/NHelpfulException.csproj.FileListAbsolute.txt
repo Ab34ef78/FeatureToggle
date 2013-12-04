@@ -1,0 +1,4 @@
+C:\Users\Masha\Documents\GitHub\NHelpfulException\src\NHelpfulException\bin\Debug\NHelpfulException.dll
+C:\Users\Masha\Documents\GitHub\NHelpfulException\src\NHelpfulException\bin\Debug\NHelpfulException.pdb
+C:\Users\Masha\Documents\GitHub\NHelpfulException\src\NHelpfulException\obj\Debug\NHelpfulException.dll
+C:\Users\Masha\Documents\GitHub\NHelpfulException\src\NHelpfulException\obj\Debug\NHelpfulException.pdb

@@ -1,0 +1,13 @@
+C:\Users\Masha\Documents\GitHub\NSure\src\NSure\bin\Debug\NSure.dll
+C:\Users\Masha\Documents\GitHub\NSure\src\NSure\bin\Debug\NSure.pdb
+C:\Users\Masha\Documents\GitHub\NSure\src\NSure\bin\Debug\NHelpfulException.dll
+C:\Users\Masha\Documents\GitHub\NSure\src\NSure\bin\Debug\NHelpfulException.pdb
+C:\Users\Masha\Documents\GitHub\NSure\src\NSure\obj\Debug\NSure.dll
+C:\Users\Masha\Documents\GitHub\NSure\src\NSure\obj\Debug\NSure.pdb
+C:\Users\Masha\Documents\GitHub\FeatureToggle\NSure\bin\Debug\NSure.dll
+C:\Users\Masha\Documents\GitHub\FeatureToggle\NSure\bin\Debug\NSure.pdb
+C:\Users\Masha\Documents\GitHub\FeatureToggle\NSure\bin\Debug\NHelpfulException.dll
+C:\Users\Masha\Documents\GitHub\FeatureToggle\NSure\bin\Debug\NHelpfulException.pdb
+C:\Users\Masha\Documents\GitHub\FeatureToggle\NSure\obj\Debug\NSure.csprojResolveAssemblyReference.cache
+C:\Users\Masha\Documents\GitHub\FeatureToggle\NSure\obj\Debug\NSure.dll
+C:\Users\Masha\Documents\GitHub\FeatureToggle\NSure\obj\Debug\NSure.pdb
