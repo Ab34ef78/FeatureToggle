@@ -200,6 +200,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountModels.cs" />
+    <Compile Include="Models\FeatureModel.cs" />
     <Compile Include="NFeature\Features.cs" />
     <Compile Include="NFeature\UpdateFeaturesConfiguration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
