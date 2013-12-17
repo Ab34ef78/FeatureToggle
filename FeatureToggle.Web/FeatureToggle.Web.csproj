@@ -40,18 +40,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="NBasicExtensionMethod">
-      <HintPath>..\packages\NBasicExtensionMethod.1.0.4554.34582\lib\net40\NBasicExtensionMethod.dll</HintPath>
-    </Reference>
-    <Reference Include="NFeature">
-      <HintPath>..\packages\NFeature.1.0.4554.36812\lib\net40\NFeature.dll</HintPath>
-    </Reference>
-    <Reference Include="NHelpfulException">
-      <HintPath>..\packages\NHelpfulException.1.0.4554.34109\lib\net40\NHelpfulException.dll</HintPath>
-    </Reference>
-    <Reference Include="NSure">
-      <HintPath>..\packages\NSure.1.0.4554.34428\lib\net40\NSure.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Data.Entity" />
@@ -206,6 +194,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="NFeatureConfig.xml" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
@@ -327,6 +316,14 @@
     <ProjectReference Include="..\NFeature.Configuration\NFeature.Configuration.csproj">
       <Project>{6bcc91df-1456-4fa0-b96f-2e52db9b8547}</Project>
       <Name>NFeature.Configuration</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NHelpfulException\NHelpfulException.csproj">
+      <Project>{7b6848bf-ffdb-417b-abbc-c7e825d66e2d}</Project>
+      <Name>NHelpfulException</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NSure\NSure.csproj">
+      <Project>{e74cc4fa-4d05-412d-bccb-9d9f43aacb47}</Project>
+      <Name>NSure</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

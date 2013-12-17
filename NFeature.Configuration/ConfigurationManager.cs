@@ -36,5 +36,34 @@ namespace NFeature.Configuration
 		public static T Section(string sectionName) {
 			return (T) ConfigurationManager.GetSection(sectionName);
 		}
+
+        public static T Section(string sectionName, string XMLconfigFilename)
+        {
+            ExeConfigurationFileMap map = new ExeConfigurationFileMap();
+            map.ExeConfigFilename = XMLconfigFilename;
+            
+            Configuration config = ConfigurationManager.OpenMappedExeConfiguration(map, ConfigurationUserLevel.None);
+
+            try
+            {
+                return config.Sections[sectionName] as T;
+
+            }
+            catch (Exception)
+            {
+                return null;
+            }
+
+        }
+
+        public static Configuration GetXMLConfig(string XMLconfigFilename)
+        {
+            ExeConfigurationFileMap map = new ExeConfigurationFileMap();
+            map.ExeConfigFilename = XMLconfigFilename; 
+            Configuration config = ConfigurationManager.OpenMappedExeConfiguration(map, ConfigurationUserLevel.None);
+
+            return config;
+
+        }
 	}
 }

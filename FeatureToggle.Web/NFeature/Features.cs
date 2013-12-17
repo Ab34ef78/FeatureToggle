@@ -7,9 +7,9 @@ namespace FeatureToggle.Web.NFeature
 {
     public enum Feature
     {
-        MyFeature,
-        MyOtherFeature,
-        MyOtherOtherFeature,
+        Feature1,
+        Feature2,
+        Feature3,
     }
 
     public enum FeatureSettings

@@ -2,24 +2,29 @@
 using NFeature.Configuration;
 using System.Collections.Generic;
 using System.Configuration;
-using System.Web.Configuration;
+using System.Linq;
 
 namespace FeatureToggle.Web.NFeature
 {
 
     public class FeaturesConfiguration
     {
-        private static Configuration configFile = WebConfigurationManager.OpenWebConfiguration("/");
+        private static string _FileName = ConfigurationManager.AppSettings["NFeatureXMLConfig"];
 
         public static void SetFeatureState(string featureName, FeatureState state)
         {
-            FeatureConfigurationSection<Feature> config = configFile.GetSection("features") as FeatureConfigurationSection<Feature>;
+            var featureSettingRepo = new AppConfigFeatureSettingRepository<Feature>();
+
+            Configuration configFile = ConfigurationManager<FeatureConfigurationSection<Feature, DefaultTenantEnum>>.GetXMLConfig(_FileName);
+
+            FeatureConfigurationSection<Feature> config = configFile.Sections["features"] as FeatureConfigurationSection<Feature>;
 
             foreach (FeatureConfigurationElement<Feature, DefaultTenantEnum> f in config.FeatureSettings)
             {
                 if (f.Name == featureName)
                 {
                     f.State = state;
+                    break;
                 }
             }
 
@@ -29,25 +34,21 @@ namespace FeatureToggle.Web.NFeature
 
         public static IEnumerable<FeatureModel> GetAllFeatures()
         {
-            List<FeatureModel> features = new List<FeatureModel>();
+            var featureSettingRepo = new AppConfigFeatureSettingRepository<Feature>();
 
-            FeatureConfigurationSection<Feature> config = configFile.GetSection("features") as FeatureConfigurationSection<Feature>;
+            List<FeatureSetting<Feature, DefaultTenantEnum>> featuresConfig = featureSettingRepo.GetFeatureSettingsFromXML(_FileName).ToList();
 
-            foreach (FeatureConfigurationElement<Feature, DefaultTenantEnum> f in config.FeatureSettings)
-            {
-                features.Add(new FeatureModel
-                {
-                    Name = f.Name,
-                    State = f.State,
-                    Description = f.Description,
-                    EndDtg = f.EndDtg,
-                    StartDtg = f.StartDtg,
-                    Dependencies = f.Dependencies
-                });
-            }
+            List<FeatureModel> features = featuresConfig.Select(f =>
+                 new FeatureModel
+                 {
+                     Name = f.Feature.ToString(),
+                     State = f.FeatureState,
+                     EndDtg = f.EndDtg,
+                     StartDtg = f.StartDtg,
+                     Dependencies = f.Dependencies
+                 }).ToList();
 
             return features;
         }
     }
-
 }

@@ -17,8 +17,9 @@
 
 namespace NFeature.Configuration
 {
-	using System;
-	using System.Linq;
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
 
 	/// <summary>
 	/// 	Responsible for retrieving FeatureSettings from a web.config/app.config file.
@@ -48,6 +49,32 @@ namespace NFeature.Configuration
 						StartDtg = fcse.StartDtg,
 						EndDtg = fcse.EndDtg,
 					}).ToArray();
+
 		}
+
+        public FeatureSetting<TFeatureEnum, TTenantEnum>[] GetFeatureSettingsFromXML(string XMLconfigFilename)
+        {
+            var configElements =
+                ConfigurationManager<FeatureConfigurationSection<TFeatureEnum, TTenantEnum>>.Section("features", XMLconfigFilename).
+                    FeatureSettings.Cast
+                    <FeatureConfigurationElement<TFeatureEnum, TTenantEnum>>();
+
+            return
+                configElements.Select(
+                    fcse =>
+                    new FeatureSetting<TFeatureEnum, TTenantEnum>
+                    {
+                        IsRequiredByFeatureSubsystem = fcse.IsRequiredByFeatureSubsystem,
+                        //this needs to be set first because it affects validation
+                        Dependencies = fcse.Dependencies,
+                        Feature = (TFeatureEnum)Enum.Parse(typeof(TFeatureEnum), fcse.Name),
+                        FeatureState = fcse.State,
+                        SupportedTenants = fcse.SupportedTenants,
+                        Settings = fcse.Settings,
+                        StartDtg = fcse.StartDtg,
+                        EndDtg = fcse.EndDtg,
+                    }).ToArray();
+        }
+
 	}
 }
