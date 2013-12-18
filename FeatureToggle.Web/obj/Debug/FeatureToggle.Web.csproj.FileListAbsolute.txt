@@ -89,3 +89,7 @@ C:\Users\Masha\Documents\GitHub\FeatureToggle\FeatureToggle.Web\bin\zh-Hant\Syst
 C:\Users\Masha\Documents\GitHub\FeatureToggle\FeatureToggle.Web\obj\Debug\FeatureToggle.Web.csprojResolveAssemblyReference.cache
 C:\Users\Masha\Documents\GitHub\FeatureToggle\FeatureToggle.Web\obj\Debug\FeatureToggle.Web.dll
 C:\Users\Masha\Documents\GitHub\FeatureToggle\FeatureToggle.Web\obj\Debug\FeatureToggle.Web.pdb
+C:\Users\Masha\Documents\GitHub\FeatureToggle\FeatureToggle.Web\bin\NFeature.dll
+C:\Users\Masha\Documents\GitHub\FeatureToggle\FeatureToggle.Web\bin\NBasicExtensionMethod.dll
+C:\Users\Masha\Documents\GitHub\FeatureToggle\FeatureToggle.Web\bin\NFeature.pdb
+C:\Users\Masha\Documents\GitHub\FeatureToggle\FeatureToggle.Web\bin\NBasicExtensionMethod.pdb

@@ -1,0 +1,15 @@
+C:\Users\Masha\Documents\GitHub\FeatureToggle\NFeature\bin\Debug\NFeature.dll
+C:\Users\Masha\Documents\GitHub\FeatureToggle\NFeature\bin\Debug\NFeature.pdb
+C:\Users\Masha\Documents\GitHub\FeatureToggle\NFeature\bin\Debug\NBasicExtensionMethod.dll
+C:\Users\Masha\Documents\GitHub\FeatureToggle\NFeature\bin\Debug\NFeature.Configuration.dll
+C:\Users\Masha\Documents\GitHub\FeatureToggle\NFeature\bin\Debug\NHelpfulException.dll
+C:\Users\Masha\Documents\GitHub\FeatureToggle\NFeature\bin\Debug\NSure.dll
+C:\Users\Masha\Documents\GitHub\FeatureToggle\NFeature\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Masha\Documents\GitHub\FeatureToggle\NFeature\bin\Debug\NBasicExtensionMethod.pdb
+C:\Users\Masha\Documents\GitHub\FeatureToggle\NFeature\bin\Debug\NFeature.Configuration.pdb
+C:\Users\Masha\Documents\GitHub\FeatureToggle\NFeature\bin\Debug\NHelpfulException.pdb
+C:\Users\Masha\Documents\GitHub\FeatureToggle\NFeature\bin\Debug\NSure.pdb
+C:\Users\Masha\Documents\GitHub\FeatureToggle\NFeature\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Masha\Documents\GitHub\FeatureToggle\NFeature\obj\Debug\NFeature.csprojResolveAssemblyReference.cache
+C:\Users\Masha\Documents\GitHub\FeatureToggle\NFeature\obj\Debug\NFeature.dll
+C:\Users\Masha\Documents\GitHub\FeatureToggle\NFeature\obj\Debug\NFeature.pdb

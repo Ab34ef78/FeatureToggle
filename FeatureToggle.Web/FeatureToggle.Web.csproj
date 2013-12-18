@@ -190,7 +190,7 @@
     <Compile Include="Models\AccountModels.cs" />
     <Compile Include="Models\FeatureModel.cs" />
     <Compile Include="NFeature\Features.cs" />
-    <Compile Include="NFeature\UpdateFeaturesConfiguration.cs" />
+    <Compile Include="NFeature\FeaturesConfiguration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -317,13 +317,9 @@
       <Project>{6bcc91df-1456-4fa0-b96f-2e52db9b8547}</Project>
       <Name>NFeature.Configuration</Name>
     </ProjectReference>
-    <ProjectReference Include="..\NHelpfulException\NHelpfulException.csproj">
-      <Project>{7b6848bf-ffdb-417b-abbc-c7e825d66e2d}</Project>
-      <Name>NHelpfulException</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\NSure\NSure.csproj">
-      <Project>{e74cc4fa-4d05-412d-bccb-9d9f43aacb47}</Project>
-      <Name>NSure</Name>
+    <ProjectReference Include="..\NFeature\NFeature.csproj">
+      <Project>{8889710b-2420-495f-94fc-a649c348adb4}</Project>
+      <Name>NFeature</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

@@ -29,5 +29,7 @@ namespace NFeature.Configuration
 		where TTenantEnum : struct
 	{
 		FeatureSetting<TFeatureEnum, TTenantEnum>[] GetFeatureSettings();
+
+        FeatureSetting<TFeatureEnum, TTenantEnum>[] GetFeatureSettingsFromXML(string XMLconfigFilename);
 	}
 }

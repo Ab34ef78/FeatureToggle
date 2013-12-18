@@ -1,0 +1,4 @@
+C:\Users\Masha\Documents\GitHub\FeatureToggle\NBasicExtensionMethod\bin\Debug\NBasicExtensionMethod.dll
+C:\Users\Masha\Documents\GitHub\FeatureToggle\NBasicExtensionMethod\bin\Debug\NBasicExtensionMethod.pdb
+C:\Users\Masha\Documents\GitHub\FeatureToggle\NBasicExtensionMethod\obj\Debug\NBasicExtensionMethod.dll
+C:\Users\Masha\Documents\GitHub\FeatureToggle\NBasicExtensionMethod\obj\Debug\NBasicExtensionMethod.pdb

@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8889710B-2420-495F-94FC-A649C348ADB4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NFeature</RootNamespace>
+    <AssemblyName>NFeature</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Staging|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Staging\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\NFeature.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>keypair.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FeatureSettingNameAttribute.cs" />
+    <Compile Include="FeatureSettingService`2.cs" />
+    <Compile Include="FeatureSettingService`1.cs" />
+    <Compile Include="DefaultImplementations\ManifestCreationStrategyDefault`1.cs" />
+    <Compile Include="FeatureSettingAvailabilityChecker`1.cs" />
+    <Compile Include="DefaultImplementations\ApplicationClockWithOffset.cs" />
+    <Compile Include="DefaultImplementations\ApplicationClockWithOffsetFactory.cs" />
+    <Compile Include="DefaultImplementations\DefaultApplicationClock.cs" />
+    <Compile Include="DefaultImplementations\ManifestCreationStrategyDefault`2.cs" />
+    <Compile Include="EmptyArgs.cs" />
+    <Compile Include="FeatureSettingAvailabilityChecker`2.cs" />
+    <Compile Include="Exceptions\EstablishedFeatureAvailabilityCheckException.cs" />
+    <Compile Include="Exceptions\CircularFeatureSettingDependencyException.cs" />
+    <Compile Include="DefaultImplementations\ManifestCreationStrategyConsideringStateCookieTenantAndTime.cs" />
+    <Compile Include="Exceptions\EstablishedFeatureDependencyException.cs" />
+    <Compile Include="FeatureVisibilityMode.cs" />
+    <Compile Include="Exceptions\FeatureDependencyConfigurationException.cs" />
+    <Compile Include="FeatureDescriptor.cs" />
+    <Compile Include="FeatureEnumExtensions.cs" />
+    <Compile Include="FeatureManifest.cs" />
+    <Compile Include="FeatureManifestService.cs" />
+    <Compile Include="Exceptions\FeatureNotAvailableException.cs" />
+    <Compile Include="Exceptions\FeatureNotConfiguredException.cs" />
+    <Compile Include="FeatureSettingAvailabilityChecker`3.cs" />
+    <Compile Include="FeatureSettingExtensions.cs" />
+    <Compile Include="FeatureSettingService`3.cs" />
+    <Compile Include="IApplicationClock.cs" />
+    <Compile Include="IFeatureDescriptor.cs" />
+    <Compile Include="IFeatureManifest.cs" />
+    <Compile Include="IFeatureManifestCreationStrategy.cs" />
+    <Compile Include="IFeatureManifestService.cs" />
+    <Compile Include="IFeatureSettingAvailabilityChecker.cs" />
+    <Compile Include="IFeatureSettingService.cs" />
+    <Compile Include="ITenancyContext.cs" />
+    <Compile Include="DefaultImplementations\DefaultFunctions.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="keypair.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NBasicExtensionMethod\NBasicExtensionMethod.csproj">
+      <Project>{b9395385-b0f3-4a82-bffc-27b0af3978c2}</Project>
+      <Name>NBasicExtensionMethod</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NFeature.Configuration\NFeature.Configuration.csproj">
+      <Project>{6bcc91df-1456-4fa0-b96f-2e52db9b8547}</Project>
+      <Name>NFeature.Configuration</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NHelpfulException\NHelpfulException.csproj">
+      <Project>{7b6848bf-ffdb-417b-abbc-c7e825d66e2d}</Project>
+      <Name>NHelpfulException</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NSure\NSure.csproj">
+      <Project>{e74cc4fa-4d05-412d-bccb-9d9f43aacb47}</Project>
+      <Name>NSure</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
