@@ -7,6 +7,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Configuration;
 using System.Web.Mvc;
+using FeatureToggle.Web.NFeature;
 
 namespace FeatureToggle.Web.Controllers
 {
@@ -14,6 +15,7 @@ namespace FeatureToggle.Web.Controllers
     {
         public ActionResult Index()
         {
+
             ViewBag.Message = "Modify this template to jump-start your ASP.NET MVC application.";
 
             return View();
@@ -29,6 +31,13 @@ namespace FeatureToggle.Web.Controllers
         public ActionResult Contact()
         {
             ViewBag.Message = "Your contact page.";
+
+            return View();
+        }
+
+        public ActionResult Feature()
+        {
+            ViewBag.Message = "Feature";
 
             return View();
         }

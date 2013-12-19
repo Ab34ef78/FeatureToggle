@@ -42,6 +42,7 @@ namespace FeatureToggle.Web.NFeature
             List<FeatureModel> features = featuresConfig.Select(f =>
                  new FeatureModel
                  {
+                     Feature = f.Feature,
                      Name = f.Feature.ToString(),
                      State = f.FeatureState,
                      EndDtg = f.EndDtg,
@@ -97,6 +98,7 @@ namespace FeatureToggle.Web.NFeature
 
         public static bool CheckFeatureAvailability(Feature a)
         {
+         
             return a.IsAvailable(GetFeatureManifest());
         }
         

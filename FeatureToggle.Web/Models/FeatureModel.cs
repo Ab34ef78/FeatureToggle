@@ -5,6 +5,7 @@ namespace FeatureToggle.Web.Models
 {
     public class FeatureModel
     {
+        public FeatureToggle.Web.NFeature.Feature Feature { get; set; }
         public string Name  { get; set; }
         public FeatureState State  { get; set; }
         public FeatureToggle.Web.NFeature.Feature[] Dependencies  { get; set; }
