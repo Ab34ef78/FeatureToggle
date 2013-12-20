@@ -1,11 +1,12 @@
-﻿@{
+﻿@model FeatureToggle.Web.Models.FeatureModel
+@{
     ViewBag.Title = "Feature";
 }
 @section featured {
     <section class="featured">
         <div class="content-wrapper">
             <hgroup class="title">
-                <h1>Administration</h1>
+                <h1>Feature Administration</h1>
                 <h2>-</h2>
             </hgroup>
             <p>
@@ -15,21 +16,15 @@
     </section>
 }
 
-<h2>Feature</h2>
+@using (Html.BeginForm())
+{
+    <p>
+        @*@Html.EditorForModel()*@
 
-<ol class="round">
-    <li class="one">
-        <h5>Feature 1</h5>
-        Drop down for Feature 1
-    </li>
+        Feature 1    @Html.DropDownListFor(model => model.State, new SelectList(Enum.GetValues(typeof(NFeature.Configuration.FeatureState)))) <br /><br /><br /><br />
+        Feature 2    @Html.DropDownListFor(model => model.State, new SelectList(Enum.GetValues(typeof(NFeature.Configuration.FeatureState)))) <br /><br /><br /><br />
+        Feature 3    @Html.DropDownListFor(model => model.State, new SelectList(Enum.GetValues(typeof(NFeature.Configuration.FeatureState)))) <br /><br /><br /><br />
+    </p>
+    <input value="Update Feature Status" type="submit" />
+}
 
-    <li class="two">
-        <h5>Feature 2</h5>
-        Drop down for Feature 2
-    </li>
-
-    <li class="three">
-        <h5>Feature 3</h5>
-        Drop down for Feature 3
-    </li>
-</ol>

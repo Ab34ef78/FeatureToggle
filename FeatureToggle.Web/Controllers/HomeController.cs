@@ -7,7 +7,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Configuration;
 using System.Web.Mvc;
-using FeatureToggle.Web.NFeature;
+using FeatureToggle.Web.Models;
 
 namespace FeatureToggle.Web.Controllers
 {
@@ -39,7 +39,9 @@ namespace FeatureToggle.Web.Controllers
         {
             ViewBag.Message = "Feature";
 
-            return View();
+            var viewModel = new FeatureModel();
+
+            return View(viewModel);
         }
     }
 }
