@@ -1,4 +1,5 @@
-﻿@model FeatureToggle.Web.Models.FeatureModel
+﻿@using FeatureToggle.Web.Models;
+@model List<FeatureModel>
 @{
     ViewBag.Title = "Feature";
 }
@@ -6,25 +7,38 @@
     <section class="featured">
         <div class="content-wrapper">
             <hgroup class="title">
-                <h1>Feature Administration</h1>
-                <h2>-</h2>
+                <h1>Feature Toggle Suite Administration</h1>
+                
             </hgroup>
             <p>
-                This screen is for Administrators to set mode for each feature
+                Please set the feature availability here.
             </p>
         </div>
     </section>
 }
 
-@using (Html.BeginForm())
+@using (Html.BeginForm("Save", "Feature", FormMethod.Post))
 {
-    <p>
+   
         @*@Html.EditorForModel()*@
-
-        Feature 1    @Html.DropDownListFor(model => model.State, new SelectList(Enum.GetValues(typeof(NFeature.Configuration.FeatureState)))) <br /><br /><br /><br />
-        Feature 2    @Html.DropDownListFor(model => model.State, new SelectList(Enum.GetValues(typeof(NFeature.Configuration.FeatureState)))) <br /><br /><br /><br />
-        Feature 3    @Html.DropDownListFor(model => model.State, new SelectList(Enum.GetValues(typeof(NFeature.Configuration.FeatureState)))) <br /><br /><br /><br />
-    </p>
-    <input value="Update Feature Status" type="submit" />
+        <h2>List of features</h2>
+        <table>
+            @foreach (FeatureModel item in Model)
+            {
+            <tr> 
+                <td>
+                    @item.Name
+                </td>
+                <td>
+                     @Html.DropDownList(item.Name, new SelectList(Enum.GetValues(typeof(NFeature.Configuration.FeatureState)), item.State))
+                </td>
+            </tr>
+            }
+            <tr>
+                <td colspan="2">
+                    <input value="Save" type="submit" Name="Save"/>
+                </td>
+            </tr>
+    </table>
 }
 

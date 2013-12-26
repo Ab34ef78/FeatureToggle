@@ -1,4 +1,6 @@
-﻿
+﻿@using FeatureToggle.Web.MyFeature;
+@using NFeature;
+
 @{
     ViewBag.Title = "Home Page";
 }
@@ -6,29 +8,48 @@
     <section class="featured">
         <div class="content-wrapper">
             <hgroup class="title">
-                <h1>FEATURE TOGGLE FRAMEWORK</h1>
-                <h2>-</h2>
+                <h1>Feature Toggle Suite</h1>
+                <h2></h2>
             </hgroup>
             <p>
-                This screen demonstrates the usage of Feature Toggle Framework. Based on the features selected in the Admin page, the features below in this page are made visible or non-visible
+                Welcome to Feature Toggle Suite page of EMC Professional Services - Application Workgroup. Feature Toggle Suite
+                is one of the innovative toolset developed internally by Application workgroup. This suite completely redefines
+                the way new feature are released. The feature management in a release is controlled by business. Business 
+                admin can turn on/off feature based on their schedule. i.e., features are already backed in the code but only
+                becomes available when business decides to. Please read benefits page for more information.
             </p>
         </div>
     </section>
 }
-<h3>Features - Feature Toggle Framework</h3>
+<h3>Features - Feature Toggle Suite</h3>
 <ol class="round">
+    @if (Feature.GettingStarted.IsAvailable(FeatureRepo.FeatureManifest))
+    {
     <li class="one">
-        <h5>Feature 1</h5>
-        Functionality of Feature 1
-    </li>
+        <h5>Getting Started</h5>
+        Getting started with Feature Toggle Suite is easy. Please visit GitHub and download the suit. 
+        Also, please do not forget to learn more about how EMC tools such as Feature Toggle Suite 
+        can modernize managment of application features.
 
+        Canary testing one of the advantage of Feature Toggle Suite. Please see Canary Testing live in action here.
+    </li>
+    }
+   
+     @if (Feature.RedSquareProduct.IsAvailable(FeatureRepo.FeatureManifest))
+    {
     <li class="two">
-        <h5>Feature 2</h5>
-        Functionality of Feature 2
+        <div>
+        <h5>Red Square Product</h5>
+        This is preview release code named RED where we are doing market research for Product with Red square package.
+        </div>
     </li>
+     }
 
+     @if (Feature.BlueSquareProduct.IsAvailable(FeatureRepo.FeatureManifest))
+    {
     <li class="three">
-        <h5>Feature 3</h5>
-        Functionality of Feature 3
+        <h5>Blue Sqaure Product</h5>
+        This is preview release code named BLUE where we are doing market research for Product with Blue square package. 
     </li>
+     }
 </ol>

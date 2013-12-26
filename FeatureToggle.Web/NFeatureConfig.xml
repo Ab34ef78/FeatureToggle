@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <configuration>
 <configSections>
-     <section name="features" type="NFeature.Configuration.FeatureConfigurationSection`1[[FeatureToggle.Web.NFeature.Feature, FeatureToggle.Web]], NFeature.Configuration" />
+     <section name="features" type="NFeature.Configuration.FeatureConfigurationSection`1[[FeatureToggle.Web.MyFeature.Feature, FeatureToggle.Web]], NFeature.Configuration" />
   </configSections>
 <features>
-    <add name="Feature1" state="Enabled" />
-    <add name="Feature2" state="Previewable" />
-    <add name="Feature3" state="Disabled" />
+    <add name="GettingStarted" state="Enabled" />
+    <add name="RedSquareProduct" state="Previewable" />
+    <add name="BlueSquareProduct" state="Disabled" />
 </features>
 </configuration>
