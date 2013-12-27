@@ -49,9 +49,9 @@ namespace NFeature.Configuration
                 return config.Sections[sectionName] as T;
 
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                return null;
+                throw;
             }
 
         }
