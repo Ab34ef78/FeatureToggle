@@ -9,3 +9,14 @@ C:\Users\Masha\Documents\GitHub\FeatureToggle\NFeature.Configuration\bin\Debug\N
 C:\Users\Masha\Documents\GitHub\FeatureToggle\NFeature.Configuration\obj\Debug\NFeature.Configuration.csprojResolveAssemblyReference.cache
 C:\Users\Masha\Documents\GitHub\FeatureToggle\NFeature.Configuration\obj\Debug\NFeature.Configuration.dll
 C:\Users\Masha\Documents\GitHub\FeatureToggle\NFeature.Configuration\obj\Debug\NFeature.Configuration.pdb
+C:\Users\thumms\Documents\GitHub\FeatureToggle\NFeature.Configuration\bin\Debug\NFeature.Configuration.dll
+C:\Users\thumms\Documents\GitHub\FeatureToggle\NFeature.Configuration\bin\Debug\NFeature.Configuration.pdb
+C:\Users\thumms\Documents\GitHub\FeatureToggle\NFeature.Configuration\bin\Debug\Newtonsoft.Json.dll
+C:\Users\thumms\Documents\GitHub\FeatureToggle\NFeature.Configuration\bin\Debug\NHelpfulException.dll
+C:\Users\thumms\Documents\GitHub\FeatureToggle\NFeature.Configuration\bin\Debug\NSure.dll
+C:\Users\thumms\Documents\GitHub\FeatureToggle\NFeature.Configuration\bin\Debug\NHelpfulException.pdb
+C:\Users\thumms\Documents\GitHub\FeatureToggle\NFeature.Configuration\bin\Debug\NSure.pdb
+C:\Users\thumms\Documents\GitHub\FeatureToggle\NFeature.Configuration\bin\Debug\Newtonsoft.Json.xml
+C:\Users\thumms\Documents\GitHub\FeatureToggle\NFeature.Configuration\obj\Debug\NFeature.Configuration.csprojResolveAssemblyReference.cache
+C:\Users\thumms\Documents\GitHub\FeatureToggle\NFeature.Configuration\obj\Debug\NFeature.Configuration.dll
+C:\Users\thumms\Documents\GitHub\FeatureToggle\NFeature.Configuration\obj\Debug\NFeature.Configuration.pdb

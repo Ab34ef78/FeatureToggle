@@ -12,7 +12,7 @@ namespace FeatureToggle.Web.MyFeature
     public static class FeatureRepo
     {
         private static string _FileName = ConfigurationManager.AppSettings["NFeatureXMLConfig"];
-        public static IFeatureManifest<Feature> FeatureManifest { get; set; }
+        public static IFeatureManifest<Feature> FeatureManifest { get; private set; }
         public static FeatureVisibilityMode VisibilityMode { get; set; }
         static FeatureRepo()
         {

@@ -3,3 +3,8 @@ C:\Users\Masha\Documents\GitHub\FeatureToggle\NBasicExtensionMethod\bin\Debug\NB
 C:\Users\Masha\Documents\GitHub\FeatureToggle\NBasicExtensionMethod\obj\Debug\NBasicExtensionMethod.csprojResolveAssemblyReference.cache
 C:\Users\Masha\Documents\GitHub\FeatureToggle\NBasicExtensionMethod\obj\Debug\NBasicExtensionMethod.dll
 C:\Users\Masha\Documents\GitHub\FeatureToggle\NBasicExtensionMethod\obj\Debug\NBasicExtensionMethod.pdb
+C:\Users\thumms\Documents\GitHub\FeatureToggle\NBasicExtensionMethod\bin\Debug\NBasicExtensionMethod.dll
+C:\Users\thumms\Documents\GitHub\FeatureToggle\NBasicExtensionMethod\bin\Debug\NBasicExtensionMethod.pdb
+C:\Users\thumms\Documents\GitHub\FeatureToggle\NBasicExtensionMethod\obj\Debug\NBasicExtensionMethod.csprojResolveAssemblyReference.cache
+C:\Users\thumms\Documents\GitHub\FeatureToggle\NBasicExtensionMethod\obj\Debug\NBasicExtensionMethod.dll
+C:\Users\thumms\Documents\GitHub\FeatureToggle\NBasicExtensionMethod\obj\Debug\NBasicExtensionMethod.pdb
